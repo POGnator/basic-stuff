@@ -1,14 +1,31 @@
 #include <iostream>
 using namespace std;
 //The "map" that we're going to use
-string map = "..........\n..........";
+char map[11][11]=
+{
+    "**********",
+    "*........*",
+    "*........*",
+    "*........*",
+    "*........*",
+    "*........*",
+    "*........*",
+    "*........*",
+    "*........*",
+    "**********"
+};
 
 int main(){
     string answer;
     int Xplayer = 0;
     int Yplayer = 0;
+    int arraySize = sizeof(map);
+    string mapString;
+    for (int i = 0; i < arraySize; i++){
+        mapString = mapString + map[i];
+    }
     cout << "Started" << endl;
-    cout << map << endl;
+    cout << mapString << endl;
     while (answer != "e")
     {
         cin >> answer;
