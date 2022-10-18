@@ -1,14 +1,17 @@
 #include <iostream>
 using namespace std;
+//The "map" that we're going to use
+string map = "..........\n..........";
 
 int main(){
     string answer;
     int Xplayer = 0;
     int Yplayer = 0;
-    std::cout << "Started" << std:: endl;
+    cout << "Started" << endl;
+    cout << map << endl;
     while (answer != "e")
     {
-        std::cin >> answer;
+        cin >> answer;
         if (answer == "w"){
             Yplayer += 1;
         }
@@ -22,7 +25,7 @@ int main(){
             Xplayer += 1;
         };
     }
-    std::cout << "Player X: " << Xplayer << std::endl;
-    std::cout << "Player Y: " << Yplayer << std::endl;
+    cout << "Player X: " << Xplayer << endl;
+    cout << "Player Y: " << Yplayer << endl;
     return 0;
 }
