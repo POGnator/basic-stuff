@@ -1,16 +1,22 @@
 #include <iostream>
+#include <windows.h>
 using namespace std;
 //The "map" that we're going to use
-string map = "..........\n..........";
+string map[] =
+{"..........\n..........\n..........\n..........\n..........\n..........\n..........\n..........\n..........\n.........."};
 
 int main(){
+    system("cls");
     string answer;
     int Xplayer = 0;
     int Yplayer = 0;
     cout << "Started" << endl;
-    cout << map << endl;
     while (answer != "e")
     {
+        //cout << sizeof(map);
+        for (int i = 0; i < 320; i++){
+        cout << map[i];
+        };
         cin >> answer;
         if (answer == "w"){
             Yplayer += 1;
