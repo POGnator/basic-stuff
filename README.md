@@ -18,8 +18,9 @@ This repository contains "Hello, World!" Programs and other simple programs in v
     * Known issues:
         * Is Windows only since you need windows.h
 * **pacman_or_snake_i_havent_decided.cpp:** Pacman game in console.
-    * Known issues:
-        * Not working as it is a WIP.
+    * Known issues: None
+    * Achievments:
+      * Movement finished!
 
 
 ## Python:
