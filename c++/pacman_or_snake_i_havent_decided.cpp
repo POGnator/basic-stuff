@@ -1,10 +1,14 @@
 #include <iostream>
 #include <windows.h>
+#include <cmath>
+#include <math.h>
 using namespace std;
 //The "map" that we're going to use
-string map[] =
-{"..........\n..........\n..........\n..........\n..........\n..........\n..........\n..........\n..........\n.........."};
+string map = "..........\n..........\n..........\n..........\n..........\n..........\n..........\n..........\n..........\n..........";
 
+int calcPos(int xpos, int ypos){
+    return(xpos + 10*(sqrt(pow(ypos, 2)))-ypos);
+};
 int main(){
     system("cls");
     string answer;
@@ -13,25 +17,29 @@ int main(){
     cout << "Started" << endl;
     while (answer != "e")
     {
-        //cout << sizeof(map);
-        for (int i = 0; i < 320; i++){
-        cout << map[i];
-        };
+        system("cls");
+        cout << map << endl << "Player X: " << Xplayer << endl << "Player Y: " << Yplayer << endl;
         cin >> answer;
-        if (answer == "w"){
+        if (answer == "w" && Yplayer < 0){
+            map[calcPos(Xplayer, Yplayer)] = '.';
             Yplayer += 1;
         }
-        if (answer == "s"){
+        if (answer == "s" && Yplayer > -9){
+            map[calcPos(Xplayer, Yplayer)] = '.';
             Yplayer -= 1;
         }
-        if (answer == "a"){
+        if (answer == "a" && Xplayer > 0){ 
+            map[calcPos(Xplayer, Yplayer)] = '.';
             Xplayer -= 1;
         }
-        if (answer == "d"){
+        if (answer == "d" && Xplayer < 9){
+            map[calcPos(Xplayer, Yplayer)] = '.';
             Xplayer += 1;
         };
+        map[calcPos(Xplayer, Yplayer)] = 'O';
+        
     }
-    cout << "Player X: " << Xplayer << endl;
-    cout << "Player Y: " << Yplayer << endl;
+    
+    
     return 0;
 }
