@@ -7,5 +7,7 @@ int main(){
     system("gcc -v");
     cout << endl << "g++:" << endl;
     system("g++ -v");
+    cout << "Press enter to exit.";
+    cin.ignore();
     return 0;
 }
