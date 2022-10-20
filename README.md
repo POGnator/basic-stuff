@@ -20,7 +20,7 @@ This repository contains "Hello, World!" Programs and other simple programs in v
 * **pacman_or_snake_i_havent_decided.cpp:** Pacman game in console.
     * Known issues: None
     * Achievments:
-      * Movement finished!
+      * Movement finished! This took way to long and 8th grade math, but it works!
 
 
 ## Python:
