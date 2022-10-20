@@ -14,11 +14,22 @@ This repository contains "Hello, World!" Programs and other simple programs in v
 ## C++:
 * **helloworld.cpp:** Same as *helloworld.c*
     * Known issues: None
+* **gcc_checker.cpp:** Checks if the Gnu Compiler Collection is installed on a machine.
+    * Known issues:
+        * Is Windows only since you need windows.h
+* **pacman_or_snake_i_havent_decided.cpp:** Pacman game in console.
+    * Known issues:
+        * Not working as it is a WIP.
 
 
 ## Python:
+> I abandoned my Python scripts/projects and won't be updated since my focus shifted to C/C++.
 * **helloworld.py:** Asks for name, same as *helloworld.c*
     * Known issues: None
+* **ytdownloader.py:** Downloads YouTube videos.
+    * Known Issues:
+        * Project not working.
+    
 
 ## Windows Powershell
 * **helloworld.ps1:** Same as *helloworld.py*
