@@ -23,8 +23,13 @@ This repository contains "Hello, World!" Programs and other simple programs in v
 
 
 ## Python:
+> I abandoned my Python scripts/projects and won't be updated since my focus shifted to C/C++.
 * **helloworld.py:** Asks for name, same as *helloworld.c*
     * Known issues: None
+* **ytdownloader.py:** Downloads YouTube videos.
+    * Known Issues:
+        * Project not working.
+    
 
 ## Windows Powershell
 * **helloworld.ps1:** Same as *helloworld.py*
