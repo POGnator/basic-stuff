@@ -2,3 +2,4 @@ c++/.vscode/
 /.vscode/
 *.exe
 *.out
+*.o
