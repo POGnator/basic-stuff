@@ -21,6 +21,9 @@ This repository contains "Hello, World!" Programs and other simple programs in v
     * Known issues: None
     * Achievments:
       * Movement finished! This took way too long and 8th grade math, but it works!
+    * Instructions:
+        * Use wasd to navigate, enter to confirm your movement option.
+        * Get yourself (the O) to the goal (the X)!
 
 
 ## Python:
