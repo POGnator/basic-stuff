@@ -1,18 +1,19 @@
 #include <iostream>
+#include <cstring>
 #include <windows.h>
 using namespace std;
 
 // Custom cmd-based file browser
 int main(){
-    char* answer;
+    string answer;
     cin >> answer;
-    if (answer == "showdir"){
+    while (answer != "end"){
+        if (answer == "showdir"){
         system("dir");
-    }
-    if (answer == "fullcntrl"){
-        cout << "You are now in full control mode" << endl;
+        }
+        else{cout << "Statement invalid!" << endl;}
         cin >> answer;
-        system(answer);
     }
+
     return 0;
 }
