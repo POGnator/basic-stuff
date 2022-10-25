@@ -5,17 +5,22 @@ using namespace std;
 
 // Custom cmd-based file browser
 int main(){
-    string answer, filename;
-    cin >> answer;
-    while (answer != "end"){
-        if (answer == "showdir"){
+    char* answer, filename;
+    char* copy;
+    string answerStr;
+    cin >> answerStr;
+    while (strcmp(answer, "end") != 0){
+        
+        memcpy(copy, answer, 4);
+        if (strcmp(answer, "showdir") == 0){
         system("dir");
         }
-        if (answer.substr(0, answer.find(' ')) == "make"){
-            cout << "Computer just made " << filename << endl;
+        if (strcmp(copy, "make") == 0){
+            //answer.erase(0, 5);
+            cout << "Computer just made " << answer << endl;
         }
         /*else{cout << "Statement invalid!" << endl;}*/
-        cin >> answer;
+        cin >> answerStr;
     }
 
     return 0;
